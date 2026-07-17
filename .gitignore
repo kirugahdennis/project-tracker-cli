@@ -1,0 +1,4 @@
+venv/
+__pycache__/
+*.pyc
+data/tracker_data.json
