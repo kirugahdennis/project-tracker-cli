@@ -26,7 +26,7 @@ class Project:
     owner_id: str
     id: str = field(default_factory=lambda: str(uuid.uuid4())[:8])
     task_ids: list = field(default_factory=list)
-    created_at: str = field(default_factory=lambda: datetime.now().isofrmat())
+    created_at: str = field(default_factory=lambda: datetime.now().isoformat())
 
     def to_dict(self):
         return self.__dict__
